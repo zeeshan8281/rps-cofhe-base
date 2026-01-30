@@ -1,0 +1,12 @@
+{
+    "buildCommand": "cd packages/miniapp && npm run build",
+    "outputDirectory": "packages/miniapp/.next",
+    "installCommand": "npm install && cd packages/miniapp && npm install",
+    "framework": "nextjs",
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "/"
+        }
+    ]
+}

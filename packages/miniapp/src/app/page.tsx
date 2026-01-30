@@ -4,7 +4,7 @@ import { useMiniKit } from "@coinbase/onchainkit/minikit";
 import { ConnectWalletButton } from "../components/ConnectWalletButton";
 import { Footer } from "../components/Footer";
 import Image from "next/image";
-import { FHECounter } from "../components/FHECounter";
+import { EncryptedRPS } from "../components/EncryptedRPS";
 import { usePermit } from "../hooks/usePermit";
 import { useCofheStore } from "../store/cofheStore";
 import { useAccount } from "wagmi";
@@ -111,7 +111,7 @@ export default function Home() {
                 </button>
               )}
               {isConnected && isCofheInitialized && hasValidPermit && (
-                <FHECounter />
+                <EncryptedRPS />
               )}
 
               {/* Remove Permit Button */}
